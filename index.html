@@ -97,7 +97,7 @@
 <body>
     <div class="container">
         <h1>Política de Privacidade - App Cidinha</h1>
-        <p class="update-date"><strong>Última atualização:</strong> 18 de outubro de 2025</p>
+        <p class="update-date"><strong>Última atualização:</strong> 27 de outubro de 2025</p>
 
         <h2>1. Introdução</h2>
         <p>O aplicativo Cidinha ("nós", "nosso" ou "app") respeita sua privacidade e está comprometido em proteger seus dados pessoais. Esta política de privacidade explica como coletamos, usamos e protegemos suas informações.</p>
@@ -106,12 +106,23 @@
         
         <h3>2.1 Dados Fornecidos por Você</h3>
         <ul>
-            <li><strong>Informações de vendas:</strong> Dados das vendas que você registra no app (descrição, valor, data)</li>
-            <li><strong>Fotos de produtos:</strong> Imagens que você adiciona aos seus produtos</li>
-            <li><strong>Dados de uso:</strong> Como você utiliza o aplicativo</li>
+            <li><strong>Nome:</strong> Para identificação no app</li>
+            <li><strong>Telefone:</strong> Para contato e identificação</li>
+            <li><strong>Email:</strong> Obtido através do Google Sign-In (opcional)</li>
+            <li><strong>Foto de perfil:</strong> Opcional, pode ser adicionada por você</li>
+            <li><strong>Chave PIX:</strong> Opcional, para facilitar recebimentos</li>
+            <li><strong>Informações de clientes:</strong> Nome, telefone, email e foto dos seus clientes</li>
+            <li><strong>Informações de vendas:</strong> Produtos, valores, parcelas e datas das vendas</li>
         </ul>
 
-        <h3>2.2 Dados Coletados Automaticamente</h3>
+        <h3>2.2 Dados Coletados via Google Sign-In (Opcional)</h3>
+        <ul>
+            <li><strong>Email da conta Google:</strong> Para autenticação e identificação</li>
+            <li><strong>Nome do perfil Google:</strong> Para personalização do app</li>
+            <li><strong>Foto do perfil Google:</strong> Para exibição no app</li>
+        </ul>
+
+        <h3>2.3 Dados Coletados Automaticamente</h3>
         <ul>
             <li><strong>Informações do dispositivo:</strong> Modelo do dispositivo, versão do sistema operacional</li>
             <li><strong>Dados de diagnóstico:</strong> Relatórios de erro e performance do app</li>
@@ -120,25 +131,38 @@
         <h2>3. Como Usamos Suas Informações</h2>
         <p>Utilizamos seus dados para:</p>
         <ul>
-            <li>Permitir que você registre e gerencie suas vendas</li>
-            <li>Armazenar suas fotos de produtos localmente no dispositivo</li>
+            <li>Permitir que você registre e gerencie suas vendas e clientes</li>
+            <li>Autenticar sua conta via Google Sign-In (opcional)</li>
+            <li>Sincronizar seus dados entre dispositivos (se você optar por fazer login)</li>
+            <li>Armazenar suas informações localmente no dispositivo</li>
             <li>Melhorar a funcionalidade e experiência do aplicativo</li>
             <li>Corrigir bugs e problemas técnicos</li>
         </ul>
 
         <h2>4. Armazenamento de Dados</h2>
         
-        <h3>Armazenamento Local</h3>
+        <h3>4.1 Armazenamento Local (Sempre)</h3>
         <ul>
-            <li><strong>Todos os seus dados são armazenados APENAS no seu dispositivo</strong></li>
+            <li><strong>Todos os seus dados são armazenados no seu dispositivo</strong></li>
             <li>O app funciona completamente offline</li>
-            <li>Não enviamos seus dados para servidores externos</li>
-            <li>Não compartilhamos suas informações com terceiros</li>
+            <li>Você pode usar o app sem criar conta</li>
+            <li>Dados salvos localmente usando SQLDelight (banco de dados local)</li>
         </ul>
 
-        <h3>Segurança</h3>
+        <h3>4.2 Armazenamento em Nuvem (Opcional)</h3>
         <ul>
-            <li>Os dados são protegidos pelos mecanismos de segurança do seu dispositivo</li>
+            <li><strong>Se você optar por fazer login com Google:</strong></li>
+            <li>Seus dados serão sincronizados com Firebase Firestore (Google Cloud)</li>
+            <li>Permite acessar seus dados em múltiplos dispositivos</li>
+            <li>Você pode continuar usando offline e sincronizar depois</li>
+            <li>Dados criptografados em trânsito (HTTPS)</li>
+        </ul>
+
+        <h3>4.3 Segurança</h3>
+        <ul>
+            <li>Dados locais protegidos pelos mecanismos de segurança do seu dispositivo</li>
+            <li>Dados na nuvem protegidos por Firebase Security Rules</li>
+            <li>Apenas você pode acessar seus próprios dados</li>
             <li>Recomendamos manter seu dispositivo protegido com senha/biometria</li>
         </ul>
 
@@ -155,14 +179,21 @@
         </ul>
 
         <h2>6. Compartilhamento de Dados</h2>
-        <p><strong>NÃO compartilhamos, vendemos ou transferimos seus dados pessoais para terceiros.</strong></p>
-        <p>O app Cidinha:</p>
+        <p><strong>NÃO compartilhamos, vendemos ou transferimos seus dados pessoais para terceiros comerciais.</strong></p>
+        
+        <h3>6.1 Serviços que Utilizamos</h3>
         <ul>
-            <li>✅ Não coleta dados de identificação pessoal</li>
-            <li>✅ Não envia dados para servidores</li>
-            <li>✅ Não usa serviços de análise de terceiros</li>
-            <li>✅ Não exibe anúncios</li>
-            <li>✅ Não possui rastreamento</li>
+            <li><strong>Google Firebase:</strong> Para autenticação (Google Sign-In) e armazenamento em nuvem (Firestore) - apenas se você optar por fazer login</li>
+            <li><strong>Google Play Services:</strong> Para funcionalidades do Android</li>
+        </ul>
+
+        <h3>6.2 O que NÃO fazemos</h3>
+        <ul>
+            <li>❌ Não vendemos seus dados</li>
+            <li>❌ Não compartilhamos com empresas de marketing</li>
+            <li>❌ Não usamos serviços de análise de terceiros</li>
+            <li>❌ Não exibimos anúncios</li>
+            <li>❌ Não rastreamos sua localização</li>
         </ul>
 
         <h2>7. Dados de Crianças</h2>
@@ -201,24 +232,33 @@
         <div class="highlight-box">
             <h2><span class="emoji">🔒</span> Resumo Simples</h2>
             
-            <p><strong>Privacidade Total</strong></p>
+            <p><strong>Você Escolhe</strong></p>
             <ul>
-                <li>Seus dados NUNCA saem do seu dispositivo</li>
-                <li>Não coletamos informações pessoais</li>
-                <li>Não compartilhamos nada com terceiros</li>
-                <li>Funciona 100% offline</li>
+                <li><strong>Modo Offline:</strong> Seus dados ficam APENAS no seu dispositivo</li>
+                <li><strong>Com Login Google:</strong> Dados sincronizados com Firebase (Google Cloud)</li>
+                <li>Você decide se quer sincronizar ou não</li>
             </ul>
 
-            <p><strong><span class="emoji">📱</span> O que armazenamos no seu dispositivo</strong></p>
+            <p><strong><span class="emoji">📱</span> O que armazenamos</strong></p>
             <ul>
-                <li>Suas vendas registradas</li>
-                <li>Fotos dos produtos que você adicionar</li>
+                <li>Nome, telefone, email (do Google)</li>
+                <li>Seus clientes e vendas</li>
+                <li>Fotos de perfil e produtos</li>
+                <li>Chave PIX (opcional)</li>
+            </ul>
+
+            <p><strong><span class="emoji">☁️</span> Sincronização (Opcional)</strong></p>
+            <ul>
+                <li>Faça login com Google para sincronizar</li>
+                <li>Acesse seus dados em vários dispositivos</li>
+                <li>Funciona offline e sincroniza depois</li>
             </ul>
 
             <p><strong><span class="emoji">🛡️</span> Segurança</strong></p>
             <ul>
-                <li>Dados protegidos pelo seu dispositivo</li>
-                <li>Desinstalar o app = deletar todos os dados</li>
+                <li>Dados locais protegidos pelo seu dispositivo</li>
+                <li>Dados na nuvem protegidos por Firebase</li>
+                <li>Apenas você acessa seus dados</li>
             </ul>
         </div>
 
